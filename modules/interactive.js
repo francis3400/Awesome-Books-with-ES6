@@ -14,12 +14,10 @@ export default class Display {
 
   static addRemoveEvent = () => {
     const removeBtn = document.querySelectorAll('.removeBtn');
-    removeBtn.forEach((Btn) =>
-      Btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        this.removeBook(Btn.id);
-      })
-    );
+    removeBtn.forEach((Btn) => Btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      this.removeBook(Btn.id);
+    }));
   };
 
   static displayBooks = () => {
